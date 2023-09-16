@@ -524,14 +524,16 @@ button.toggleFavorite:hover {
 	}
 	.btn {
 		background: #d5000000;
+		top: -181%;
+        left: 1171%;
 	}
 	.btn i{
 		position: absolute;
 		font-size: 25px;
 		color: white;
 		/* line-height: 70px; */
-		top: -53%;
-		left: 460%;
+		top: 0%;
+        left: 33%;
 	}
 	.container:hover i{
 		display: none;
