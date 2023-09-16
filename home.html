@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/estilos.css">
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+	<title>Pelisflix</title>
+</head>
+<body>
+	<div class="lds-ring loader" id="loader">
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+	<header>
+		<div class="contenedor">
+			<h2 class="logotipo">Pelisflix</h2>
+			<nav>
+				<a href="#" class="activo">Inicio</a>
+				<a href="#">Películas y Series</a>
+				<a href="#">Suscripcion</a>
+                <a href="#">Mi cuenta</a>
+				<div class="container">
+					<input type="text" placeholder="Buscar">
+					<div class="btn">
+						<i class="fa fa-search"></i>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<div class="peliculas-promocion contenedor">
+				<div class="contenedor-titulo-controles">
+					<h3>Película Principal</h3>
+				</div>
+		</div>
+		<div class="pelicula-principal">
+			<div class="contenedor">
+				<h3 class="titulo">Interestellar</h3>
+				<p class="descripcion">
+					Narra las aventuras de un grupo de exploradores que hacen uso de un agujero de gusano recientemente descubierto para superar las limitaciones de los viajes espaciales tripulados y vencer las inmensas distancias que tiene un viaje interestelar.
+				</p>
+				<button role="button" class="boton"><i class="fas fa-play"></i>Reproducir</button>
+				<button role="button" class="boton"><i class="fas fa-info-circle"></i>Más información</button>
+			</div>
+		</div>
+
+		<div class="peliculas-recomendadas contenedor">
+			<div class="contenedor-titulo-controles">
+				<h3>Películas Recomendadas</h3>
+				<div class="indicadores in1"></div>
+			</div>
+
+			<div class="contenedor-principal">
+				<button role="button" id="fi1" class="flecha-izquierda"><i class="fas fa-angle-left"></i></button>
+				<div class="contenedor-carousel carr1">
+					<div class="carousel">
+						<div class="pelicula  p1">
+							<div class="movie">
+								<a href="#"><img src="img/Peliculas_y_Series/Bloodshot.png" alt=""></a>
+								<div class="movie-info">
+								  <button class="toggleFavorite"><i class="far fa-heart"></i></button>
+								  <h4 class="headline">Bloodshot (2020)</h4>
+								  <p class="descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic aliquam quo sit doloribus adipisci accusamus ut nam facilis deserunt impedit asperiores, commodi qui quasi soluta quibusdam quia corrupti natus ex.</p>
+								</div>
+							</div>
+						</div>
+						<div class="pelicula  p1">
+							<div class="movie">
+								<a href="#"><img src="img/Peliculas_y_Series/la-sirenita-pelicula-2023.png" alt=""></a>
+								<div class="movie-info">
+								  <button class="toggleFavorite"><i class="far fa-heart"></i></button>
+								  <h4 class="headline">La sirenita (2023)</h4>
+								  <p class="descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic aliquam quo sit doloribus adipisci accusamus ut nam facilis deserunt impedit asperiores, commodi qui quasi soluta quibusdam quia corrupti natus ex.</p>
+								</div>
+							</div>
+						</div>
+						<div class="pelicula  p1">
+							<div class="movie">
+								<a href="#"><img src="img/Peliculas_y_Series/Rapidos_y_Furiosos_X.png" alt=""></a>
+								<div class="movie-info">
+								  <button class="toggleFavorite"><i class="far fa-heart"></i></button>
+								  <h4 class="headline">rápidos y furiosos x (2023)</h4>
+								  <p class="descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic aliquam quo sit doloribus adipisci accusamus ut nam facilis deserunt impedit asperiores, commodi qui quasi soluta quibusdam quia corrupti natus ex.</p>
+								</div>
+							</div>
+						</div>
+						<div class="pelicula  p1">
+							<div class="movie">
+								<a href="#"><img src="img/Peliculas_y_Series/AhsokaSerie.png" alt=""></a>
+								<div class="movie-info">
+								  <button class="toggleFavorite"><i class="far fa-heart"></i></button>
+								  <h4 class="headline">Ahsoka Serie (2023)</h4>
+								  <p class="descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic aliquam quo sit doloribus adipisci accusamus ut nam facilis deserunt impedit asperiores, commodi qui quasi soluta quibusdam quia corrupti natus ex.</p>
+								</div>
+							</div>
+						</div>
+						<div class="pelicula  p1">
+							<div class="movie">
+								<a href="#"><img src="img/Peliculas_y_Series/Serie-Juego-de-Tronos.png" alt=""></a>
+								<div class="movie-info">
+								  <button class="toggleFavorite"><i class="far fa-heart"></i></button>
+								  <h4 class="headline">Juego de Tronos Serie (2011)</h4>
+								  <p class="descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic aliquam quo sit doloribus adipisci accusamus ut nam facilis deserunt impedit asperiores, commodi qui quasi soluta quibusdam quia corrupti natus ex.</p>
+								</div>
+							</div>
+						</div>
+						<div class="pelicula  p1">
+							<div class="movie">
+								<a href="#"><img src="img/Peliculas_y_Series/BreakingBad.png" alt=""></a>
+								<div class="movie-info">
+								  <button class="toggleFavorite"><i class="far fa-heart"></i></button>
+								  <h4 class="headline">Breaking Bad Serie (2008)</h4>
+								  <p class="descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic aliquam quo sit doloribus adipisci accusamus ut nam facilis deserunt impedit asperiores, commodi qui quasi soluta quibusdam quia corrupti natus ex.</p>
+								</div>
+							</div>
+						</div>
+						<div class="pelicula  p1">
+							<div class="movie">
+								<a href="#"><img src="img/Peliculas_y_Series/The-Witcher-Netflix.png" alt=""></a>
+								<div class="movie-info">
+								  <button class="toggleFavorite"><i class="far fa-heart"></i></button>
+								  <h4 class="headline">The Witcher Serie (2019)</h4>
+								  <p class="descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic aliquam quo sit doloribus adipisci accusamus ut nam facilis deserunt impedit asperiores, commodi qui quasi soluta quibusdam quia corrupti natus ex.</p>
+								</div>
+							</div>
+						</div>
+						<div class="pelicula  p1">
+							<div class="movie">
+								<a href="#"><img src="img/Peliculas_y_Series/The-Last-Of-Us.png" alt=""></a>
+								<div class="movie-info">
+								  <button class="toggleFavorite"><i class="far fa-heart"></i></button>
+								  <h4 class="headline">The Last of Us Serie (2023)</h4>
+								  <p class="descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic aliquam quo sit doloribus adipisci accusamus ut nam facilis deserunt impedit asperiores, commodi qui quasi soluta quibusdam quia corrupti natus ex.</p>
+								</div>
+							</div>
+						</div>
+						<div class="pelicula  p1">
+							<div class="movie">
+								<a href="#"><img src="img/Peliculas_y_Series/TheWalkingDead.png" alt=""></a>
+								<div class="movie-info">
+								  <button class="toggleFavorite"><i class="far fa-heart"></i></button>
+								  <h4 class="headline">The Walking Dead Serie (2010)</h4>
+								  <p class="descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic aliquam quo sit doloribus adipisci accusamus ut nam facilis deserunt impedit asperiores, commodi qui quasi soluta quibusdam quia corrupti natus ex.</p>
+								</div>
+							</div>
+						</div>
+						<div class="pelicula  p1">
+							<div class="movie">
+								<a href="#"><img src="img/Peliculas_y_Series/StrangerThings.png" alt=""></a>
+								<div class="movie-info">
+								  <button class="toggleFavorite"><i class="far fa-heart"></i></button>
+								  <h4 class="headline">Stranger Things Serie (2016)</h4>
+								  <p class="descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic aliquam quo sit doloribus adipisci accusamus ut nam facilis deserunt impedit asperiores, commodi qui quasi soluta quibusdam quia corrupti natus ex.</p>
+								</div>
+							</div>
+						</div>
+						<div class="pelicula  p1">
+							<div class="movie">
+								<a href="#"><img src="img/Peliculas_y_Series/la-casa-de-papel.png" alt=""></a>
+								<div class="movie-info">
+								  <button class="toggleFavorite"><i class="far fa-heart"></i></button>
+								  <h4 class="headline">La Casa de Papel Serie (2017)</h4>
+								  <p class="descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic aliquam quo sit doloribus adipisci accusamus ut nam facilis deserunt impedit asperiores, commodi qui quasi soluta quibusdam quia corrupti natus ex.</p>
+								</div>
+							</div>
+						</div>
+						<div class="pelicula  p1">
+							<div class="movie">
+								<a href="#"><img src="img/Peliculas_y_Series/LaCasadelDragón.png" alt=""></a>
+								<div class="movie-info">
+								  <button class="toggleFavorite"><i class="far fa-heart"></i></button>
+								  <h4 class="headline">La Casa del Dragón Serie (2022)</h4>
+								  <p class="descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic aliquam quo sit doloribus adipisci accusamus ut nam facilis deserunt impedit asperiores, commodi qui quasi soluta quibusdam quia corrupti natus ex.</p>
+								</div>
+							</div>
+						</div>
+						<div class="pelicula  p1">
+							<div class="movie">
+								<a href="#"><img src="img/Peliculas_y_Series/PeakyBlinders.png" alt=""></a>
+								<div class="movie-info">
+								  <button class="toggleFavorite"><i class="far fa-heart"></i></button>
+								  <h4 class="headline">Peaky Blinders Serie (2013)</h4>
+								  <p class="descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic aliquam quo sit doloribus adipisci accusamus ut nam facilis deserunt impedit asperiores, commodi qui quasi soluta quibusdam quia corrupti natus ex.</p>
+								</div>
+							</div>
+						</div>
+						<div class="pelicula  p1">
+							<div class="movie">
+								<a href="#"><img src="img/Peliculas_y_Series/Megalodó2Elgranabismo.png" alt=""></a>
+								<div class="movie-info">
+								  <button class="toggleFavorite"><i class="far fa-heart"></i></button>
+								  <h4 class="headline">Megalodón 2: El gran abismo (2023)</h4>
+								  <p class="descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic aliquam quo sit doloribus adipisci accusamus ut nam facilis deserunt impedit asperiores, commodi qui quasi soluta quibusdam quia corrupti natus ex.</p>
+								</div>
+							</div>
+						</div>
+						<div class="pelicula  p1">
+							<div class="movie">
+								<a href="#"><img src="img/Peliculas_y_Series/Tortugas-Ninja-Caos-Mutante.png" alt=""></a>
+								<div class="movie-info">
+								  <button class="toggleFavorite"><i class="far fa-heart"></i></button>
+								  <h4 class="headline">Tortugas Ninja: Caos mutante (2023)</h4>
+								  <p class="descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic aliquam quo sit doloribus adipisci accusamus ut nam facilis deserunt impedit asperiores, commodi qui quasi soluta quibusdam quia corrupti natus ex.</p>
+								</div>
+							</div>
+						</div>
+						<div class="pelicula  p1">
+							<div class="movie">
+								<a href="#"><img src="img/Peliculas_y_Series/Contrarreloj.png" alt=""></a>
+								<div class="movie-info">
+								  <button class="toggleFavorite"><i class="far fa-heart"></i></button>
+								  <h4 class="headline">Contrarreloj (2023)</h4>
+								  <p class="descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic aliquam quo sit doloribus adipisci accusamus ut nam facilis deserunt impedit asperiores, commodi qui quasi soluta quibusdam quia corrupti natus ex.</p>
+								</div>
+							</div>
+						</div>
+						<div class="pelicula  p1">
+							<div class="movie">
+								<a href="#"><img src="img/Peliculas_y_Series/GranTurismo.png" alt=""></a>
+								<div class="movie-info">
+								  <button class="toggleFavorite"><i class="far fa-heart"></i></button>
+								  <h4 class="headline">Gran Turismo: De jugador a corredor (2023)</h4>
+								  <p class="descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic aliquam quo sit doloribus adipisci accusamus ut nam facilis deserunt impedit asperiores, commodi qui quasi soluta quibusdam quia corrupti natus ex.</p>
+								</div>
+							</div>
+						</div>
+						<div class="pelicula  p1">
+							<div class="movie">
+								<a href="#"><img src="img/Peliculas_y_Series/Lanochededemonio.png" alt=""></a>
+								<div class="movie-info">
+								  <button class="toggleFavorite"><i class="far fa-heart"></i></button>
+								  <h4 class="headline">La noche del demonio: La puerta roja(2023)</h4>
+								  <p class="descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic aliquam quo sit doloribus adipisci accusamus ut nam facilis deserunt impedit asperiores, commodi qui quasi soluta quibusdam quia corrupti natus ex.</p>
+								</div>
+							</div>
+						</div>
+						<div class="pelicula  p1">
+							<div class="movie">
+								<a href="#"><img src="img/Peliculas_y_Series/ReyRichard.png" alt=""></a>
+								<div class="movie-info">
+								  <button class="toggleFavorite"><i class="far fa-heart"></i></button>
+								  <h4 class="headline">Rey Richard: Una Familia Ganadora(2021)</h4>
+								  <p class="descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic aliquam quo sit doloribus adipisci accusamus ut nam facilis deserunt impedit asperiores, commodi qui quasi soluta quibusdam quia corrupti natus ex.</p>
+								</div>
+							</div>
+						</div>
+						<div class="pelicula  p1">
+							<div class="movie">
+								<a href="#"><img src="img/Peliculas_y_Series/Argentina.png" alt=""></a>
+								<div class="movie-info">
+								  <button class="toggleFavorite"><i class="far fa-heart"></i></button>
+								  <h4 class="headline">Argentina, 1985(2022)</h4>
+								  <p class="descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic aliquam quo sit doloribus adipisci accusamus ut nam facilis deserunt impedit asperiores, commodi qui quasi soluta quibusdam quia corrupti natus ex.</p>
+								</div>
+							</div>
+						</div>
+						<div class="pelicula  p1">
+							<div class="movie">
+								<a href="#"><img src="img/Peliculas_y_Series/monsters-university.png" alt=""></a>
+								<div class="movie-info">
+								  <button class="toggleFavorite"><i class="far fa-heart"></i></button>
+								  <h4 class="headline">Monsters University(2013)</h4>
+								  <p class="descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic aliquam quo sit doloribus adipisci accusamus ut nam facilis deserunt impedit asperiores, commodi qui quasi soluta quibusdam quia corrupti natus ex.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<button role="button" id="fd1" class="flecha-derecha"><i class="fas fa-angle-right"></i></button>
+			</div>
+		</div>
+		<div class="peliculas-recomendadas contenedor">
+			<div class="contenedor-titulo-controles">
+				<h3>Seguir viendo</h3>
+				<div class="indicadores in2"></div>
+			</div>
+
+			<div class="contenedor-principal">
+				<button role="button" id="fi2" class="flecha-izquierda"><i class="fas fa-angle-left"></i></button>
+				<div class="contenedor-carousel carr2">
+					<div class="carousel">
+						<div class="pelicula  p2">
+							<div class="movie">
+								<a href="#"><img src="img/seguir_viendo/Atravésdemiventana.png" alt=""></a>
+								<div class="movie-info">
+								  <h4 class="headline">A través de mi ventana (2022)</h4>
+								  <p class="progreso">Continur viendo en el minuto: 1h 2min</p>
+								</div>
+							</div>
+						</div>
+						<div class="pelicula  p2">
+							<div class="movie">
+								<a href="#"><img src="img/seguir_viendo/live-action-one-piece-oda.png" alt=""></a>
+								<div class="movie-info">
+								  <h4 class="headline">ONE PIECE Serie(2023)</h4>
+								  <p class="progreso">Continuar viendo en el Capitulo 4 - Temporada 1</p>
+								</div>
+							</div>
+						</div>
+						<div class="pelicula  p2">
+							<div class="movie">
+								<a href="#"><img src="img/seguir_viendo/Los-tres-mosqueteros-DArtagnan.png" alt=""></a>
+								<div class="movie-info">
+								  <h4 class="headline">Los tres mosqueteros: D'Artagnan (2023)</h4>
+								  <p class="progreso">Continur viendo en el minuto: 30min</p>
+								</div>
+							</div>
+						</div>
+						<div class="pelicula  p2">
+							<div class="movie">
+								<a href="#"><img src="img/seguir_viendo/Merlina-Planeta-Urbano-2022-portada.png" alt=""></a>
+								<div class="movie-info">
+								  <h4 class="headline">Merlina Serie(2022)</h4>
+								  <p class="progreso">Continuar viendo en el Capitulo 2 - Temporada 1</p>
+								</div>
+							</div>
+						</div>
+						<div class="pelicula  p2">
+							<div class="movie">
+								<a href="#"><img src="img/seguir_viendo/thor.png" alt=""></a>
+								<div class="movie-info">
+								  <h4 class="headline">Thor: un mundo oscuro (2013)</h4>
+								  <p class="progreso">Continur viendo en el minuto: 59min</p>
+								</div>
+							</div>
+						</div>
+						<div class="pelicula  p2">
+							<div class="movie">
+								<a href="#"><img src="img/seguir_viendo/dahmer.png" alt=""></a>
+								<div class="movie-info">
+								  <h4 class="headline">Dahmer: La historia de Jeffrey Serie(2022)</h4>
+								  <p class="progreso">Continuar viendo en el Capitulo 9 - Temporada 1</p>
+								</div>
+							</div>
+						</div>
+						<div class="pelicula  p2">
+							<div class="movie">
+								<a href="#"><img src="img/seguir_viendo/Oppenheimer.png" alt=""></a>
+								<div class="movie-info">
+								  <h4 class="headline">Oppenheimer (2023)</h4>
+								  <p class="progreso">Continur viendo en el minuto: 2h 10min</p>
+								</div>
+							</div>
+						</div>
+						<div class="pelicula  p2">
+							<div class="movie">
+								<a href="#"><img src="img/seguir_viendo/Moon-Knight.png" alt=""></a>
+								<div class="movie-info">
+								  <h4 class="headline">Moon Knight Serie(2022)</h4>
+								  <p class="progreso">Continuar viendo en el Capitulo 1 - Temporada 1</p>
+								</div>
+							</div>
+						</div>
+						<div class="pelicula  p2">
+							<div class="movie">
+								<a href="#"><img src="img/seguir_viendo/guardianes-de-la-galaxia-vol-3-marvel.png" alt=""></a>
+								<div class="movie-info">
+								  <h4 class="headline">Guardianes de la Galaxia volumen 3(2023)</h4>
+								  <p class="progreso">Continur viendo en el minuto: 1h 59min</p>
+								</div>
+							</div>
+						</div>
+						<div class="pelicula  p2">
+							<div class="movie">
+								<a href="#"><img src="img/seguir_viendo/halo.png" alt=""></a>
+								<div class="movie-info">
+								  <h4 class="headline">Halo Serie(2022)</h4>
+								  <p class="progreso">Continuar viendo en el Capitulo 5 - Temporada 1</p>
+								</div>
+							</div>
+						</div>
+						<div class="pelicula  p2">
+							<div class="movie">
+								<a href="#"><img src="img/seguir_viendo/Evil.png" alt=""></a>
+								<div class="movie-info">
+								  <h4 class="headline">Evil Dead: El despertar(2023)</h4>
+								  <p class="progreso">Continur viendo en el minuto: 38min</p>
+								</div>
+							</div>
+						</div>
+						<div class="pelicula  p2">
+							<div class="movie">
+								<a href="#"><img src="img/seguir_viendo/LavidadeDugSerie.png" alt=""></a>
+								<div class="movie-info">
+								  <h4 class="headline">La vida de Dug Serie(2021)</h4>
+								  <p class="progreso">Continuar viendo en el Capitulo 3 - Temporada 1</p>
+								</div>
+							</div>
+						</div>
+						<div class="pelicula  p2">
+							<div class="movie">
+								<a href="#"><img src="img/seguir_viendo/air.png" alt=""></a>
+								<div class="movie-info">
+								  <h4 class="headline">Air: La historia detrás del logo(2023)</h4>
+								  <p class="progreso">Continur viendo en el minuto: 40min</p>
+								</div>
+							</div>
+						</div>
+						<div class="pelicula  p2">
+							<div class="movie">
+								<a href="#"><img src="img/seguir_viendo/Loki.png" alt=""></a>
+								<div class="movie-info">
+								  <h4 class="headline">Loki Serie(2021)</h4>
+								  <p class="progreso">Continuar viendo en el Capitulo 4 - Temporada 1</p>
+								</div>
+							</div>
+						</div>
+						<div class="pelicula  p2">
+							<div class="movie">
+								<a href="#"><img src="img/seguir_viendo/el-exorcista-del-papa.png" alt=""></a>
+								<div class="movie-info">
+								  <h4 class="headline">El exorcista del Papa(2023)</h4>
+								  <p class="progreso">Continur viendo en el minuto: 1h 7min</p>
+								</div>
+							</div>
+						</div>
+						<div class="pelicula  p2">
+							<div class="movie">
+								<a href="#"><img src="img/seguir_viendo/encargado.png" alt=""></a>
+								<div class="movie-info">
+								  <h4 class="headline">El encargado Serie(2022)</h4>
+								  <p class="progreso">Continuar viendo en el Capitulo 10 - Temporada 1</p>
+								</div>
+							</div>
+						</div>
+						<div class="pelicula  p2">
+							<div class="movie">
+								<a href="#"><img src="img/seguir_viendo/JohnWick4.png" alt=""></a>
+								<div class="movie-info">
+								  <h4 class="headline">John Wick 4(2023)</h4>
+								  <p class="progreso">Continur viendo en el minuto: 2h 20min</p>
+								</div>
+							</div>
+						</div>
+						<div class="pelicula  p2">
+							<div class="movie">
+								<a href="#"><img src="img/seguir_viendo/Stargirl.png" alt=""></a>
+								<div class="movie-info">
+								  <h4 class="headline">Stargirl Serie(2020)</h4>
+								  <p class="progreso">Continuar viendo en el Capitulo 10 - Temporada 3</p>
+								</div>
+							</div>
+						</div>
+						<div class="pelicula  p2">
+							<div class="movie">
+								<a href="#"><img src="img/seguir_viendo/SCREAM-6.png" alt=""></a>
+								<div class="movie-info">
+								  <h4 class="headline">Scream 6(2023)</h4>
+								  <p class="progreso">Continur viendo en el minuto: 1h 27min</p>
+								</div>
+							</div>
+						</div>
+						<div class="pelicula  p2">
+							<div class="movie">
+								<a href="#"><img src="img/seguir_viendo/Rápidos.png" alt=""></a>
+								<div class="movie-info">
+								  <h4 class="headline">Rápidos y furiosos Serie(2019)</h4>
+								  <p class="progreso">Continuar viendo en el Capitulo 2 - Temporada 5</p>
+								</div>
+							</div>
+						</div>
+						<div class="pelicula  p2">
+							<div class="movie">
+								<a href="#"><img src="img/seguir_viendo/Ecos.png" alt=""></a>
+								<div class="movie-info">
+								  <h4 class="headline">Ecos de un crimen(2022)</h4>
+								  <p class="progreso">Continur viendo en el minuto: 1h 10min</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<button role="button" id="fd2" class="flecha-derecha"><i class="fas fa-angle-right"></i></button>
+			</div>
+		</div>
+		<div class="peliculas-recomendadas contenedor">
+			<div class="contenedor-titulo-controles">
+				<h3>Promocionando el viernes: Saga del Conjuro</h3>
+				<div class="indicadores in3"></div>
+			</div>
+
+			<div class="contenedor-principal">
+				<button role="button" id="fi3" class="flecha-izquierda"><i class="fas fa-angle-left"></i></button>
+				<div class="contenedor-carousel carr3">
+					<div class="carousel">
+						<div class="pelicula  p3">
+							<div class="movie">
+								<a href="#"><img src="img/saga_conjuro/elconjuro.png" alt=""></a>
+								<div class="movie-info">
+								  <button class="toggleFavorite"><i class="far fa-heart"></i></button>
+								  <h4 class="headline">El conjuro (2013)</h4>
+								  <p class="descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic aliquam quo sit doloribus adipisci accusamus ut nam facilis deserunt impedit asperiores, commodi qui quasi soluta quibusdam quia corrupti natus ex.</p>
+								</div>
+							</div>
+						</div>
+						<div class="pelicula  p3">
+							<div class="movie">
+								<a href="#"><img src="img/saga_conjuro/annabelle.png" alt=""></a>
+								<div class="movie-info">
+								  <button class="toggleFavorite"><i class="far fa-heart"></i></button>
+								  <h4 class="headline">Annabelle (2014)</h4>
+								  <p class="descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic aliquam quo sit doloribus adipisci accusamus ut nam facilis deserunt impedit asperiores, commodi qui quasi soluta quibusdam quia corrupti natus ex.</p>
+								</div>
+							</div>
+						</div>
+						<div class="pelicula  p3">
+							<div class="movie">
+								<a href="#"><img src="img/saga_conjuro/conjuro2.png" alt=""></a>
+								<div class="movie-info">
+								  <button class="toggleFavorite"><i class="far fa-heart"></i></button>
+								  <h4 class="headline">El conjuro 2 (2016)</h4>
+								  <p class="descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic aliquam quo sit doloribus adipisci accusamus ut nam facilis deserunt impedit asperiores, commodi qui quasi soluta quibusdam quia corrupti natus ex.</p>
+								</div>
+							</div>
+						</div>
+						<div class="pelicula  p3">
+							<div class="movie">
+								<a href="#"><img src="img/saga_conjuro/annabelle-2.png" alt=""></a>
+								<div class="movie-info">
+								  <button class="toggleFavorite"><i class="far fa-heart"></i></button>
+								  <h4 class="headline">Annabelle: La creación (2017)</h4>
+								  <p class="descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic aliquam quo sit doloribus adipisci accusamus ut nam facilis deserunt impedit asperiores, commodi qui quasi soluta quibusdam quia corrupti natus ex.</p>
+								</div>
+							</div>
+						</div>
+						<div class="pelicula  p3">
+							<div class="movie">
+								<a href="#"><img src="img/saga_conjuro/laMonja,png" alt=""></a>
+								<div class="movie-info">
+								  <button class="toggleFavorite"><i class="far fa-heart"></i></button>
+								  <h4 class="headline">La monja (2018)</h4>
+								  <p class="descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic aliquam quo sit doloribus adipisci accusamus ut nam facilis deserunt impedit asperiores, commodi qui quasi soluta quibusdam quia corrupti natus ex.</p>
+								</div>
+							</div>
+						</div>
+						<div class="pelicula  p3">
+							<div class="movie">
+								<a href="#"><img src="img/saga_conjuro/lallorona.png" alt=""></a>
+								<div class="movie-info">
+								  <button class="toggleFavorite"><i class="far fa-heart"></i></button>
+								  <h4 class="headline">La maldición de la Llorona (2019)</h4>
+								  <p class="descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic aliquam quo sit doloribus adipisci accusamus ut nam facilis deserunt impedit asperiores, commodi qui quasi soluta quibusdam quia corrupti natus ex.</p>
+								</div>
+							</div>
+						</div>
+						<div class="pelicula p3">
+							<div class="movie">
+								<a href="#"><img src="img/saga_conjuro/annabelle3.png" alt=""></a>
+								<div class="movie-info">
+								  <button class="toggleFavorite"><i class="far fa-heart"></i></button>
+								  <h4 class="headline">Annabelle 3: Vuelve a casa (2019)</h4>
+								  <p class="descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic aliquam quo sit doloribus adipisci accusamus ut nam facilis deserunt impedit asperiores, commodi qui quasi soluta quibusdam quia corrupti natus ex.</p>
+								</div>
+							</div>
+						</div>
+						<div class="pelicula  p3">
+							<div class="movie">
+								<a href="#"><img src="img/saga_conjuro/elconjuro3.png" alt=""></a>
+								<div class="movie-info">
+								  <button class="toggleFavorite"><i class="far fa-heart"></i></button>
+								  <h4 class="headline">El conjuro 3 (2021)</h4>
+								  <p class="descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic aliquam quo sit doloribus adipisci accusamus ut nam facilis deserunt impedit asperiores, commodi qui quasi soluta quibusdam quia corrupti natus ex.</p>
+								</div>
+							</div>
+						</div>
+						<div class="pelicula  p3">
+							<div class="movie">
+								<a href="#"><img src="img/saga_conjuro/lamonja2.png" alt=""></a>
+								<div class="movie-info">
+								  <button class="toggleFavorite"><i class="far fa-heart"></i></button>
+								  <h4 class="headline">La monja 2 (2023)</h4>
+								  <p class="descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic aliquam quo sit doloribus adipisci accusamus ut nam facilis deserunt impedit asperiores, commodi qui quasi soluta quibusdam quia corrupti natus ex.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<button role="button" id="fd3" class="flecha-derecha"><i class="fas fa-angle-right"></i></button>
+			</div>
+		</div>
+		<div class="peliculas-recomendadas contenedor">
+			<div class="contenedor-titulo-controles">
+				<h3>Filtrado</h3>
+				<div class="indicadores in3"></div>
+			</div>
+
+		</div>
+		<div class="filter-buttons">
+			<button class="filter-button active" data-filter="all">Todos</button>
+			<button class="filter-button" data-filter="accion">Acción</button>
+			<button class="filter-button" data-filter="aventura">Aventura</button>
+			<button class="filter-button" data-filter="ciencia_ficcion">Ciencia ficción</button>
+			<button class="filter-button" data-filter="familia">Familia</button>
+			<button class="filter-button" data-filter="misterio">Misterio</button>
+		</div>
+			
+		<div class="gallery">
+			<div class="item accion">
+				<img class="filter" src="img/filtrado/BlueBeetle.png" alt="">
+				<h4 class="filtrado-texto">Blue Beetle</h4>
+			</div>
+			<div class="item aventura">
+				<img class="filter" src="img/filtrado/Barbie.png" alt="">
+				<h4 class="filtrado-texto">Barbie</h4>
+			</div>
+			<div class="item ciencia_ficcion">
+				<img class="filter" src="img/filtrado/Elysium.png" alt="">
+				<h4 class="filtrado-texto">Elysium</h4>
+			</div>
+			<div class="item familia">
+				<img class="filter" src="img/filtrado/Elementos.png" alt="">
+				<h4 class="filtrado-texto">Elementos</h4>
+			</div>
+			<div class="item misterio">
+				<img class="filter" src="img/filtrado/SherlockHolmes.png" alt="">
+				<h4 class="filtrado-texto">Sherlock Holmes</h4>
+			</div>
+			<div class="item accion">
+				<img class="filter" src="img/filtrado/indiajoan.png" alt="">
+				<h4 class="filtrado-texto">Indiana Jones y el dial del destino</h4>
+			</div>
+			<div class="item aventura">
+				<img class="filter" src="img/filtrado/moana.png" alt="">
+				<h4 class="filtrado-texto">Moana: Un mar de aventuras</h4>
+			</div>
+			<div class="item ciencia_ficcion">
+				<img class="filter" src="img/filtrado/GigantesdeAcero.png" alt="">
+				<h4 class="filtrado-texto">Gigantes de Acero</h4>
+			</div>
+			<div class="item familia">
+				<img class="filter" src="img/filtrado/Encanto.png" alt="">
+				<h4 class="filtrado-texto">Encanto</h4>
+			</div>
+			<div class="item misterio">
+				<img class="filter" src="img/filtrado/SherlockHolmesJuego de sombras.png" alt="">
+				<h4 class="filtrado-texto">Sherlock Holmes: Juego de sombras</h4>
+			</div>
+			<div class="item accion">
+				<img class="filter" src="img/filtrado/Matrix-Resurrecciones.png" alt="">
+				<h4 class="filtrado-texto">Matrix resurrecciones</h4>
+			</div>
+			<div class="item aventura">
+				<img class="filter" src="img/filtrado/Ghostbusters.png" alt="">
+				<h4 class="filtrado-texto">Ghostbusters: El Legado</h4>
+			</div>
+			<div class="item ciencia_ficcion">
+				<img class="filter" src="img/filtrado/Transformers.png" alt="">
+				<h4 class="filtrado-texto">Transformers: El despertar de las bestias</h4>
+			</div>
+			<div class="item familia">
+				<img class="filter" src="img/filtrado/Red.png" alt="">
+				<h4 class="filtrado-texto">Red</h4>
+			</div>
+			<div class="item misterio">
+				<img class="filter" src="img/filtrado/batman.png" alt="">
+				<h4 class="filtrado-texto">Batman</h4>
+			</div>
+			<div class="item accion">
+				<img class="filter" src="img/filtrado/avengers.png" alt="">
+				<h4 class="filtrado-texto">The Avengers: Los Vengadores</h4>
+			</div>
+			<div class="item aventura">
+				<img class="filter" src="img/filtrado/spider-man-a-traves-del-spider-verso.png" alt="">
+				<h4 class="filtrado-texto">Spider-Man: A través del Spider-Verso</h4>
+			</div>
+			<div class="item ciencia_ficcion">
+				<img class="filter" src="img/filtrado/Flash.png" alt="">
+				<h4 class="filtrado-texto">Flash</h4>
+			</div>
+			<div class="item familia">
+				<img class="filter" src="img/filtrado/MonstersInc.png" alt="">
+				<h4 class="filtrado-texto">Monsters, Inc.</h4>
+			</div>
+			<div class="item misterio">
+				<img class="filter" src="img/filtrado/Invitaciónaunasesinato.png" alt="">
+				<h4 class="filtrado-texto">Invitación a un asesinato</h4>
+			</div>
+			<div class="item accion">
+				<img class="filter" src="img/filtrado/LinternaVerde.png" alt="">
+				<h4 class="filtrado-texto">Linterna Verde</h4>
+			</div>
+			<div class="item aventura">
+				<img class="filter" src="img/filtrado/hobbit.png" alt="">
+				<h4 class="filtrado-texto">El Hobbit: Un viaje inesperado</h4>
+			</div>
+			<div class="item ciencia_ficcion">
+				<img class="filter" src="img/filtrado/spider-man_sin_camino_a_casa.png" alt="">
+				<h4 class="filtrado-texto">Spider-Man: Sin camino a casa</h4>
+			</div>
+			<div class="item familia">
+				<img class="filter" src="img/filtrado/LasAventurasdelDoctorDolittle.png" alt="">
+				<h4 class="filtrado-texto">Las Aventuras del Doctor Dolittle</h4>
+			</div>
+			<div class="item misterio">
+				<img class="filter" src="img/filtrado/Tirador.png" alt="">
+				<h4 class="filtrado-texto">Tirador</h4>
+			</div>
+		</div>
+		
+	</main>	
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
+
+
+<!--     
+	Accion
+	Aventura
+	Ciencia Ficcion
+	Familia
+-->
